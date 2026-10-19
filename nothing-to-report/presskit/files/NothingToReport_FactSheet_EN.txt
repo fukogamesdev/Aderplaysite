@@ -1,1 +1,57 @@
 NOTHING TO REPORT - FACT SHEET
+
+Developer:               AderGames (Eskişehir, Türkiye)
+Publisher:               AderGames (self-published)
+Release date:            October 28, 2026
+Platform:                PC (Steam)
+Price:                   USD 4.99
+Players:                 2-4, online co-op (solo play possible)
+Length:                  15 minutes to 2 hours
+Voice-over:              English, Turkish
+Interface and subtitles: 12 languages (English, French, Italian, German, Spanish,
+                         Brazilian Portuguese, Russian, Simplified Chinese,
+                         Traditional Chinese, Japanese, Korean, Turkish)
+Steam:                   https://store.steampowered.com/app/5381090/Nothing_to_Report/
+
+SHORT DESCRIPTION
+A co-op horror spot-the-difference game for 2-4 players. You're in the same room,
+but you might not see the same thing. Talk, compare, and radio in a single report.
+Get it wrong, and you all start over.
+
+ABOUT THE GAME
+Nothing to Report is an online co-op horror game for 2-4 players. In anomaly games
+like The Exit 8, you walk alone and rely on your memory to spot what changed.
+Here, you find the difference by talking to your friends: everyone stands in the
+same room, but each player's map may be different.
+
+You see the poster on the wall; the person next to you doesn't. The number you call
+a 6 is a 9 to them. Or everything is exactly the same. Only one rule: no looking at
+each other's screens. Talk, describe, ask.
+
+Every level ends with a single report. If you saw a difference, choose Report. If
+everything matches, choose Nothing to report. One of you makes the call; get it
+wrong and you all go back to level one.
+
+There was a rift in spacetime. The reflections of our world, the ones that should
+be identical, are changing, and your team has been sent in: a flashlight in your
+hand, a radio in your ear. The operator on the radio starts out calm. She doesn't
+stay that way.
+
+WHAT MAKES IT DIFFERENT
+- You find the difference by talking, not by memory. Each player may see a
+  different version of the same room.
+- One report per level. A single mistake resets the run for everyone.
+- Everyone's sanity is their own. As it drops, scares come more often. Close your
+  eyes to protect your mind, but then all you can do is listen.
+- In-game proximity voice chat. Move apart and your voice goes over the radio, and
+  the farther you are, the more it cuts out.
+- A story and a fully voiced radio operator. English and Turkish voice-over,
+  interface and subtitles in 12 languages.
+
+STUDIO
+AderGames is an independent game studio founded by two friends in Eskişehir,
+Türkiye. Nothing to Report is our first game. We are developing and publishing it
+ourselves, without a publisher.
+
+Text, images and videos in this kit may be used freely for news, reviews and
+streaming.

@@ -1,0 +1,56 @@
+NOTHING TO REPORT - BİLGİ NOTU
+
+Geliştirici:        AderGames (Eskişehir, Türkiye)
+Yayıncı:            AderGames (kendi yayını)
+Çıkış tarihi:       28 Ekim 2026
+Platform:           PC (Steam)
+Fiyat:              4,99 USD
+Oyuncu:             2-4 kişi, çevrimiçi co-op (tek başına da oynanabilir)
+Süre:               15 dakika ile 2 saat arası
+Seslendirme:        İngilizce, Türkçe
+Arayüz ve altyazı:  12 dil (İngilizce, Fransızca, İtalyanca, Almanca, İspanyolca,
+                    Brezilya Portekizcesi, Rusça, Basitleştirilmiş Çince,
+                    Geleneksel Çince, Japonca, Korece, Türkçe)
+Steam:              https://store.steampowered.com/app/5381090/Nothing_to_Report/
+
+KISA AÇIKLAMA
+2-4 kişilik co-op korku ve fark bulma oyunu. Aynı odadasınız ama aynı şeyi
+görmeyebilirsiniz. Konuşun, karşılaştırın, telsizden tek bir rapor verin.
+Yanılırsanız hepiniz başa dönersiniz.
+
+OYUN HAKKINDA
+Nothing to Report, 2-4 kişilik çevrimiçi bir co-op korku oyunu. The Exit 8 gibi
+anomali oyunlarında tek başınıza dolaşır, neyin değiştiğini hafızanızla
+bulursunuz. Burada farkı arkadaşlarınızla konuşarak bulursunuz: herkes aynı odada
+duruyor ama harita her oyuncuda farklı olabiliyor.
+
+Duvardaki posteri siz görürsünüz, yanınızdaki kişi görmez. Sizin 6 dediğiniz sayı
+onun için 9'dur. Ya da her şey birebir aynıdır. Tek kural: birbirinizin ekranına
+bakmak yok. Konuşun, tarif edin, sorun.
+
+Her bölüm tek bir raporla biter. Bir fark gördüyseniz Rapor Et, her şey aynıysa
+Raporlanacak Bir Şey Yok. Raporu biriniz verir; yanılırsanız hepiniz birinci
+bölüme dönersiniz.
+
+Uzay-zamanda bir yırtılma oldu. Birebir aynı olması gereken yansıma evrenler
+değişiyor ve ekibinizi oraya gönderdiler: elinizde bir fener, kulağınızda bir
+telsiz. Telsizdeki operatör sakin başlar. Öyle kalmaz.
+
+NEYİ FARKLI YAPIYOR
+- Fark hafızayla değil, konuşarak bulunuyor. Her oyuncu aynı odanın farklı bir
+  halini görebilir.
+- Bölüm başına tek rapor. Tek bir hata koşuyu herkes için sıfırlar.
+- Herkesin akıl sağlığı kendine. Azaldıkça korku anları sıklaşır. Gözlerinizi
+  kapatırsanız aklınızı korursunuz ama artık yalnızca duyabilirsiniz.
+- Oyun içi yakınlık tabanlı sesli sohbet. Uzaklaştıkça sesiniz telsize geçer,
+  mesafe açıldıkça telsiz kesilmeye başlar.
+- Hikaye ve seslendirilmiş bir telsiz operatörü. İngilizce ve Türkçe seslendirme,
+  12 dilde arayüz ve altyazı.
+
+STÜDYO
+AderGames, Eskişehir'de iki arkadaşın kurduğu bağımsız bir oyun stüdyosu.
+Nothing to Report ilk oyunumuz. Oyunu bir yayıncı olmadan, kendimiz geliştirip
+yayınlıyoruz.
+
+Bu dosyadaki metinler, görseller ve videolar haber, inceleme ve yayın amacıyla
+serbestçe kullanılabilir.
