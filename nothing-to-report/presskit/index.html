@@ -8,12 +8,13 @@
 <meta name="theme-color" content="#07090a">
 <link rel="icon" type="image/png" href="img/icon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
-<!-- Sosyal medya önizlemesi. Site adresi belli olunca og:image ve og:url tam adresle yazılmalı (bkz. Furkan notu). -->
+<link rel="canonical" href="https://aderplay.com/nothing-to-report/presskit/">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://aderplay.com/nothing-to-report/presskit/">
 <meta property="og:site_name" content="AderGames">
 <meta property="og:title" content="Nothing to Report - Press Kit">
 <meta property="og:description" content="A co-op horror spot-the-difference game for 2-4 players. You're in the same room, but you might not see the same thing. Out October 28, 2026 on Steam.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://aderplay.com/nothing-to-report/presskit/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -114,7 +115,7 @@ html[lang="ja"] .facts dt{letter-spacing:.04em}
 .yt-facade:hover .play{transform:scale(1.06)}
 .trailer-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:14px;font-size:14px;align-items:center}
 
-.shots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.shots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 @media (max-width:900px){.shots{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .shot{position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#000;cursor:zoom-in;padding:0}
 .shot img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:transform .3s ease}
@@ -235,7 +236,7 @@ footer{padding-block:36px 48px;color:var(--muted);font-size:13px}
   <div class="wrap">
     <h2 data-i18n="h_downloads"></h2>
     <div class="dl">
-      <a class="big" href="files/NothingToReport_PressKit.zip" download><span data-i18n="dl_zip"></span><span>ZIP, 9 MB</span></a>
+      <a class="big" href="files/NothingToReport_PressKit.zip" download><span data-i18n="dl_zip"></span><span>ZIP, 10 MB</span></a>
     </div>
     <p class="muted small dl-line"><span data-i18n="dl_single"></span>
       <a href="files/NothingToReport_logo_1280.png" download data-i18n="dl_logo"></a><span class="sep">/</span>
@@ -291,9 +292,9 @@ const PRESS_EMAIL = "";   // basın iletişim maili, ör. "press@alanadi.com". B
 const YOUTUBE = { EN: "tESulrL-LPc", TR: "7CWLMZ6xee0" };   // fragmanların YouTube video kimlikleri
 /* =================== */
 
-const SHOTS = [
-  "NTR_01_skulls","NTR_02_in_the_light","NTR_03_four_flashlights","NTR_04_hands","NTR_05_the_report",
-  "NTR_06_number_9","NTR_07_the_eye","NTR_08_dragged","NTR_09_face_to_face","NTR_10_capsule"
+const SHOTS = [   // Steam'deki sırayla
+  "NTR_01_the_woman","NTR_02_skulls","NTR_03_four_flashlights","NTR_04_hands","NTR_05_the_report","NTR_06_in_the_light",
+  "NTR_07_number_9","NTR_08_the_eye","NTR_09_dragged","NTR_10_face_to_face","NTR_11_capsule"
 ];
 
 const T = {
@@ -324,7 +325,7 @@ tr:{
   h_trailer:"Fragman", tab_en:"İngilizce", tab_tr:"Türkçe",
   yt_link:"YouTube'da izle", mp4_link:"Fragmanı indir",
   h_shots:"Ekran görüntüleri",
-  shots_note:"Büyütmek için tıklayın. Hepsi 4K olarak indirilebilir.",
+  shots_note:"Büyütmek için tıklayın. Hepsi tam çözünürlükte indirilebilir.",
   h_downloads:"İndirmeler",
   dl_zip:"Tüm görseller tek dosyada (ekran görüntüleri, logo, key art, bilgi notları)",
   h_studio:"Stüdyo",
@@ -333,7 +334,7 @@ tr:{
   contact_p:"Haber, inceleme, röportaj ve yayın talepleri için bize yazın.",
   contact_keys:"İnceleme ve yayın anahtarı taleplerinizi de bu adrese iletebilirsiniz.",
   usage:"Bu sayfadaki görseller ve videolar haber, inceleme ve yayın amacıyla serbestçe kullanılabilir.",
-  lb_full:"4K indir (JPG)", lb_close:"Kapat"
+  lb_full:"Tam boyut indir (JPG)", lb_close:"Kapat"
 },
 en:{
   copy:"Copy", copied:"Copied", play:"Play trailer",
@@ -362,7 +363,7 @@ en:{
   h_trailer:"Trailer", tab_en:"English", tab_tr:"Turkish",
   yt_link:"Watch on YouTube", mp4_link:"Download trailer",
   h_shots:"Screenshots",
-  shots_note:"Click to enlarge. All available in 4K.",
+  shots_note:"Click to enlarge. All available in full resolution.",
   h_downloads:"Downloads",
   dl_zip:"All images (screenshots, logo, key art, fact sheets)",
   h_studio:"Studio",
@@ -371,7 +372,7 @@ en:{
   contact_p:"For news, reviews, interviews and streaming, get in touch.",
   contact_keys:"Review and streaming key requests can be sent to the same address.",
   usage:"Images and videos on this page may be used freely for news, reviews and streaming.",
-  lb_full:"Download 4K (JPG)", lb_close:"Close"
+  lb_full:"Download full size (JPG)", lb_close:"Close"
 },
 ja:{
   copy:"コピー", copied:"コピーしました", play:"トレーラーを再生",
@@ -400,7 +401,7 @@ ja:{
   h_trailer:"トレーラー", tab_en:"英語版", tab_tr:"トルコ語版",
   yt_link:"YouTubeで見る", mp4_link:"トレーラーをダウンロード",
   h_shots:"スクリーンショット",
-  shots_note:"クリックで拡大。すべて4Kでダウンロードできます。",
+  shots_note:"クリックで拡大。すべてフル解像度でダウンロードできます。",
   h_downloads:"ダウンロード",
   dl_zip:"画像素材一式（スクリーンショット、ロゴ、キーアート、ファクトシート）",
   h_studio:"スタジオ",
@@ -409,7 +410,7 @@ ja:{
   contact_p:"記事掲載、レビュー、インタビュー、配信に関するお問い合わせはこちらへ。",
   contact_keys:"レビュー用・配信用キーのご相談も同じ窓口で承ります。",
   usage:"このページの画像と動画は、報道・レビュー・配信の目的で自由にご利用いただけます。",
-  lb_full:"4Kでダウンロード（JPG）", lb_close:"閉じる"
+  lb_full:"フルサイズでダウンロード（JPG）", lb_close:"閉じる"
 }};
 
 let lang = "en";
@@ -486,7 +487,7 @@ SHOTS.forEach((n,i)=>{
 });
 const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbFull = document.getElementById("lbFull");
 let cur = 0, lastFocus = null;
-function showLb(i){ cur = (i+SHOTS.length)%SHOTS.length; const f = "shots/4k/"+SHOTS[cur]+".jpg"; lbImg.src = f; lbFull.href = f; }
+function showLb(i){ cur = (i+SHOTS.length)%SHOTS.length; const f = "shots/full/"+SHOTS[cur]+".jpg"; lbImg.src = f; lbFull.href = f; }
 function openLb(i){ lastFocus = document.activeElement; showLb(i); lb.classList.add("open"); document.getElementById("lbClose").focus(); }
 function closeLb(){ lb.classList.remove("open"); lbImg.removeAttribute("src"); if(lastFocus) lastFocus.focus(); }
 document.getElementById("lbClose").onclick = closeLb;
