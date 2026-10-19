@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nothing to Report - Press Kit</title>
+<meta name="description" content="Press kit for Nothing to Report, a co-op horror spot-the-difference game for 2-4 players by AderGames. Out October 28, 2026 on Steam.">
+<meta name="theme-color" content="#07090a">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<!-- Sosyal medya önizlemesi. Site adresi belli olunca og:image ve og:url tam adresle yazılmalı (bkz. Furkan notu). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AderGames">
+<meta property="og:title" content="Nothing to Report - Press Kit">
+<meta property="og:description" content="A co-op horror spot-the-difference game for 2-4 players. You're in the same room, but you might not see the same thing. Out October 28, 2026 on Steam.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#07090a;
+  --bg-2:#0d1112;
+  --panel:#111618;
+  --line:#1f2a2b;
+  --text:#d9e2dc;
+  --text-strong:#eef4ef;
+  --muted:#8a9a92;
+  --green:#9be39a;
+  --green-dim:#5f9c64;
+  --green-glow:rgba(155,227,154,.18);
+  --on-green:#071007;
+  --scrim:rgba(0,0,0,.92);
+  --radius:10px;
+  --head:"Chakra Petch","Noto Sans JP",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+html[lang="ja"] body{line-height:1.8}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+.top{position:sticky;top:0;z-index:20;background:rgba(7,9,10,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.brand{font-family:var(--head);font-weight:600;letter-spacing:.06em;color:var(--text);font-size:15px;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.brand b{color:var(--green);font-weight:600}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-shrink:0}
+.lang button{background:none;border:0;color:var(--muted);font:600 13px var(--head);padding:6px 12px;cursor:pointer;letter-spacing:.04em}
+.lang button[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+@media (max-width:520px){.brand b{display:none}.brand{font-size:13px}.lang button{padding:6px 10px}}
+
+.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-bg{position:absolute;inset:0;background:url("img/hero.jpg") center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,9,10,.94) 0%,rgba(7,9,10,.72) 42%,rgba(7,9,10,.15) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(7,9,10,0) 40%)}
+.hero .wrap{position:relative;padding-block:72px 56px;width:100%}
+.hero h1{margin:0}
+.hero-logo{width:min(420px,78vw);filter:drop-shadow(0 0 24px var(--green-glow))}
+.tagline{max-width:540px;font-size:19px;margin:22px 0 8px;color:var(--text-strong);text-wrap:balance}
+.date{font-family:var(--head);color:var(--green);letter-spacing:.08em;font-weight:600;margin:0 0 26px;font-size:15px;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;font:600 15px var(--body);border:1px solid var(--green);color:var(--green);background:rgba(7,9,10,.5);cursor:pointer}
+.btn:hover{text-decoration:none;background:var(--green-glow)}
+.btn.primary{background:var(--green);color:var(--on-green)}
+.btn.primary:hover{background:#b5f0b3}
+@media (max-width:640px){.hero{min-height:460px}.hero-bg{background-position:65% center}.tagline{font-size:17px}}
+
+section{padding-block:72px;border-bottom:1px solid var(--line);scroll-margin-top:56px}
+h2{font-family:var(--head);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin:0 0 22px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+html[lang="ja"] h2{letter-spacing:.08em}
+h3{font-family:var(--head);font-weight:600;font-size:22px;margin:0 0 14px;line-height:1.3;color:var(--text-strong);text-wrap:balance}
+p{margin:0 0 16px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+.grid-main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start}
+.grid-main>div{min-width:0;max-width:68ch}
+@media (max-width:960px){.grid-main{grid-template-columns:minmax(0,1fr)}}
+.facts{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:sticky;top:76px}
+@media (max-width:960px){.facts{position:static}}
+.facts h2{margin-bottom:14px}
+.facts dl{margin:0;display:grid;gap:12px}
+.facts dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:var(--head);font-weight:600}
+html[lang="ja"] .facts dt{letter-spacing:.04em}
+.facts dd{margin:2px 0 0;font-size:15px;color:var(--text)}
+
+.diff{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.diff li{position:relative;padding:12px 16px 12px 42px;background:var(--bg-2);border:1px solid var(--line);border-radius:8px}
+.diff li::before{content:"";position:absolute;left:17px;top:20px;width:10px;height:10px;border:2px solid var(--green);border-radius:50%;box-shadow:0 0 10px var(--green-glow)}
+.diff b{color:var(--text-strong);font-weight:600}
+
+.trailer-tabs{display:flex;gap:8px;margin-bottom:14px}
+.tab{background:var(--panel);border:1px solid var(--line);color:var(--muted);font:600 13px var(--head);letter-spacing:.06em;padding:8px 14px;border-radius:6px;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--on-green);background:var(--green);border-color:var(--green)}
+.video{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;max-width:100%}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-facade{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:#000;cursor:pointer}
+.yt-facade img{width:100%;height:100%;object-fit:cover;opacity:.9;transition:opacity .2s}
+.yt-facade:hover img{opacity:1}
+.yt-facade .play{position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(7,9,10,.72);border:2px solid var(--green);box-shadow:0 0 28px var(--green-glow);transition:transform .2s}
+.yt-facade .play::after{content:"";position:absolute;left:33px;top:25px;border-style:solid;border-width:17px 0 17px 27px;border-color:transparent transparent transparent var(--green)}
+.yt-facade:hover .play{transform:scale(1.06)}
+.trailer-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:14px;font-size:14px;align-items:center}
+
+.shots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media (max-width:900px){.shots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.shot{position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#000;cursor:zoom-in;padding:0}
+.shot img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:transform .3s ease}
+.shot:hover img{transform:scale(1.03)}
+
+.dl{display:grid;gap:14px}
+.dl .big{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 20px;background:var(--panel);border:1px solid var(--green-dim);border-radius:8px;color:var(--green);font-weight:600}
+.dl .big:hover{background:var(--green-glow);text-decoration:none}
+.dl .big span:last-child{color:var(--muted);font-size:13px;font-weight:400;white-space:nowrap}
+.dl-line{margin-top:16px;line-height:2}
+.dl-line .sep{color:var(--line);margin:0 6px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.two>div{min-width:0}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:40px}}
+.two.solo{grid-template-columns:minmax(0,1fr)}
+.two.solo>div{max-width:68ch}
+.mailrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.contact-mail{font-family:var(--head);font-size:22px;font-weight:600;color:var(--green);user-select:all;word-break:break-all}
+.copy{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px}
+.copy:hover{border-color:var(--green-dim)}
+
+footer{padding-block:36px 48px;color:var(--muted);font-size:13px}
+
+.lb{position:fixed;inset:0;z-index:50;background:var(--scrim);display:none;align-items:center;justify-content:center;padding:20px 16px;flex-direction:column;gap:14px}
+.lb.open{display:flex}
+.lb img{max-width:min(1600px,100%);max-height:calc(100vh - 140px);border-radius:6px}
+.lb .bar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;font-size:14px}
+.lb button,.lb .lbdl{background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:8px 14px;cursor:pointer;font-size:14px;line-height:1.4}
+.lb button:hover,.lb .lbdl:hover{border-color:var(--green-dim);text-decoration:none}
+.lb .lbdl{color:var(--green);border-color:var(--green-dim)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">NOTHING TO REPORT <b>/ PRESS KIT</b></div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="tr">TR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">日本語</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg" role="img" aria-label="Nothing to Report key art"></div>
+  <div class="wrap">
+    <h1><img class="hero-logo" src="img/logo.png" alt="Nothing to Report" width="720" height="312"></h1>
+    <p class="tagline" data-i18n="tagline"></p>
+    <p class="date" data-i18n="date_line"></p>
+    <div class="btns">
+      <a class="btn primary" id="steamBtn" href="https://store.steampowered.com/app/5381090/Nothing_to_Report/?utm_source=presskit&amp;utm_medium=web" target="_blank" rel="noopener" data-i18n="btn_wishlist"></a>
+      <a class="btn" href="#trailer" data-i18n="btn_trailer"></a>
+      <a class="btn" href="files/NothingToReport_PressKit.zip" download data-i18n="btn_zip"></a>
+    </div>
+  </div>
+</div>
+
+<main>
+<section id="about">
+  <div class="wrap grid-main">
+    <div>
+      <h2 data-i18n="h_about"></h2>
+      <h3 data-i18n="about_title"></h3>
+      <p data-i18n="about_p1"></p>
+      <p data-i18n="about_p2"></p>
+      <ul class="diff">
+        <li data-i18n="diff_1"></li>
+        <li data-i18n="diff_2"></li>
+        <li data-i18n="diff_3"></li>
+        <li data-i18n="diff_4"></li>
+      </ul>
+    </div>
+    <aside class="facts">
+      <h2 data-i18n="h_facts"></h2>
+      <dl>
+        <div><dt data-i18n="f_dev"></dt><dd data-i18n="v_dev"></dd></div>
+        <div><dt data-i18n="f_pub"></dt><dd data-i18n="v_pub"></dd></div>
+        <div><dt data-i18n="f_date"></dt><dd data-i18n="v_date"></dd></div>
+        <div><dt data-i18n="f_platform"></dt><dd>PC (Steam)</dd></div>
+        <div><dt data-i18n="f_price"></dt><dd>USD 4.99</dd></div>
+        <div><dt data-i18n="f_players"></dt><dd data-i18n="v_players"></dd></div>
+        <div><dt data-i18n="f_length"></dt><dd data-i18n="v_length"></dd></div>
+        <div><dt data-i18n="f_voice"></dt><dd data-i18n="v_voice"></dd></div>
+        <div><dt data-i18n="f_langs"></dt><dd data-i18n="v_langs"></dd></div>
+        <div class="press-row" hidden><dt data-i18n="f_press"></dt><dd class="press-mail"></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section id="trailer">
+  <div class="wrap">
+    <h2 data-i18n="h_trailer"></h2>
+    <div class="trailer-tabs" role="tablist">
+      <button class="tab" type="button" role="tab" data-trailer="EN" aria-selected="true" data-i18n="tab_en"></button>
+      <button class="tab" type="button" role="tab" data-trailer="TR" aria-selected="false" data-i18n="tab_tr"></button>
+    </div>
+    <div class="video" id="video"></div>
+    <div class="trailer-links">
+      <a id="ytLink" href="https://youtu.be/tESulrL-LPc" target="_blank" rel="noopener" data-i18n="yt_link"></a>
+      <a id="mp4Link" href="trailer/NothingToReport_Trailer_EN_720p.mp4" download><span data-i18n="mp4_link"></span> (MP4, 720p, 9 MB)</a>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots">
+  <div class="wrap">
+    <h2 data-i18n="h_shots"></h2>
+    <p class="muted small" data-i18n="shots_note"></p>
+    <div class="shots" id="shots"></div>
+  </div>
+</section>
+
+<section id="downloads">
+  <div class="wrap">
+    <h2 data-i18n="h_downloads"></h2>
+    <div class="dl">
+      <a class="big" href="files/NothingToReport_PressKit.zip" download><span data-i18n="dl_zip"></span><span>ZIP, 9 MB</span></a>
+    </div>
+    <p class="muted small dl-line"><span data-i18n="dl_single"></span>
+      <a href="files/NothingToReport_logo_1280.png" download data-i18n="dl_logo"></a><span class="sep">/</span>
+      <a href="files/NothingToReport_key_art_3840x1240.png" download data-i18n="dl_keyart"></a><span class="sep">/</span>
+      <a href="files/NothingToReport_header_920x430.png" download data-i18n="dl_header"></a><span class="sep">/</span>
+      <a href="files/NothingToReport_BilgiNotu_TR.txt" download>Bilgi notu (TR)</a><span class="sep">/</span>
+      <a href="files/NothingToReport_FactSheet_EN.txt" download>Fact sheet (EN)</a><span class="sep">/</span>
+      <a href="files/NothingToReport_FactSheet_JA.txt" download>ファクトシート (JA)</a>
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap two" id="studioRow">
+    <div>
+      <h2 data-i18n="h_studio"></h2>
+      <h3>AderGames</h3>
+      <p data-i18n="studio_p1"></p>
+    </div>
+    <div class="press-row" hidden>
+      <h2 data-i18n="h_contact"></h2>
+      <p data-i18n="contact_p"></p>
+      <div class="mailrow">
+        <span class="contact-mail press-mail"></span>
+        <button type="button" class="copy" id="copyMail" data-i18n="copy"></button>
+      </div>
+      <p class="muted small" data-i18n="contact_keys" style="margin-top:12px"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="usage"></p>
+    <p>© 2026 AderGames. Nothing to Report.</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Screenshot">
+  <img id="lbImg" alt="">
+  <div class="bar">
+    <button type="button" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <a class="lbdl" id="lbFull" href="#" download data-i18n="lb_full"></a>
+    <button type="button" id="lbNext" aria-label="Next">&#8594;</button>
+    <button type="button" id="lbClose" data-i18n="lb_close"></button>
+  </div>
+</div>
+
+<script>
+/* ===== AYARLAR ===== */
+const PRESS_EMAIL = "";   // basın iletişim maili, ör. "press@alanadi.com". Boşken iletişim satırları gizli.
+const YOUTUBE = { EN: "tESulrL-LPc", TR: "7CWLMZ6xee0" };   // fragmanların YouTube video kimlikleri
+/* =================== */
+
+const SHOTS = [
+  "NTR_01_skulls","NTR_02_in_the_light","NTR_03_four_flashlights","NTR_04_hands","NTR_05_the_report",
+  "NTR_06_number_9","NTR_07_the_eye","NTR_08_dragged","NTR_09_face_to_face","NTR_10_capsule"
+];
+
+const T = {
+tr:{
+  copy:"Kopyala", copied:"Kopyalandı", play:"Fragmanı oynat",
+  dl_single:"Tek tek:", dl_logo:"Logo (PNG)", dl_keyart:"Key art (PNG)", dl_header:"Kapak görseli (PNG)",
+  tagline:"2-4 kişilik co-op korku ve fark bulma oyunu. Aynı odadasınız ama aynı şeyi görmeyebilirsiniz.",
+  date_line:"28 Ekim 2026 · Steam",
+  btn_wishlist:"Steam'de istek listene ekle", btn_trailer:"Fragmanı izle", btn_zip:"Tüm görselleri indir",
+  h_about:"Oyun hakkında",
+  about_title:"Aynı odadasınız. Peki aynı şeyi mi görüyorsunuz?",
+  about_p1:"Nothing to Report, 2-4 kişilik çevrimiçi bir co-op korku oyunu. The Exit 8 gibi anomali oyunlarında farkı tek başınıza, hafızanızla ararsınız. Burada herkes aynı odada durur ama harita her oyuncuda farklı olabilir: duvardaki posteri siz görürsünüz, yanınızdaki görmez. Sizin 6 dediğiniz sayı onun için 9'dur. Ekranlara bakmak yok, farkı konuşarak bulursunuz.",
+  about_p2:"Uzay-zamanda bir yırtılma oldu ve ekibinizi değişen yansıma evrenlere gönderdiler. Telsizdeki operatör sakin başlar. Öyle kalmaz.",
+  diff_1:"<b>Bölüm başına tek rapor.</b> Yanılırsanız hepiniz başa dönersiniz.",
+  diff_2:"<b>Herkesin akıl sağlığı kendine.</b> Gözlerinizi kapatırsanız aklınızı korursunuz ama yalnızca duyabilirsiniz.",
+  diff_3:"<b>Yakınlık tabanlı sesli sohbet.</b> Uzaklaştıkça sesiniz telsize geçer ve kesilmeye başlar.",
+  diff_4:"<b>Hikaye ve seslendirilmiş bir telsiz operatörü.</b> İngilizce ve Türkçe seslendirme.",
+  h_facts:"Bilgi notu",
+  f_dev:"Geliştirici", v_dev:"AderGames (Eskişehir, Türkiye)",
+  f_pub:"Yayıncı", v_pub:"AderGames (kendi yayını)",
+  f_date:"Çıkış tarihi", v_date:"28 Ekim 2026",
+  f_platform:"Platform", f_price:"Fiyat",
+  f_players:"Oyuncu", v_players:"2-4 kişi, çevrimiçi co-op",
+  f_length:"Süre", v_length:"15 dakika ile 2 saat arası",
+  f_voice:"Seslendirme", v_voice:"İngilizce, Türkçe",
+  f_langs:"Arayüz ve altyazı", v_langs:"12 dil (Türkçe ve Japonca dahil)",
+  f_press:"Basın iletişimi",
+  h_trailer:"Fragman", tab_en:"İngilizce", tab_tr:"Türkçe",
+  yt_link:"YouTube'da izle", mp4_link:"Fragmanı indir",
+  h_shots:"Ekran görüntüleri",
+  shots_note:"Büyütmek için tıklayın. Hepsi 4K olarak indirilebilir.",
+  h_downloads:"İndirmeler",
+  dl_zip:"Tüm görseller tek dosyada (ekran görüntüleri, logo, key art, bilgi notları)",
+  h_studio:"Stüdyo",
+  studio_p1:"AderGames, Eskişehir'de iki arkadaşın kurduğu bağımsız bir oyun stüdyosu. Nothing to Report ilk oyunumuz; yayıncı olmadan, kendimiz geliştirip yayınlıyoruz.",
+  h_contact:"İletişim",
+  contact_p:"Haber, inceleme, röportaj ve yayın talepleri için bize yazın.",
+  contact_keys:"İnceleme ve yayın anahtarı taleplerinizi de bu adrese iletebilirsiniz.",
+  usage:"Bu sayfadaki görseller ve videolar haber, inceleme ve yayın amacıyla serbestçe kullanılabilir.",
+  lb_full:"4K indir (JPG)", lb_close:"Kapat"
+},
+en:{
+  copy:"Copy", copied:"Copied", play:"Play trailer",
+  dl_single:"Individual files:", dl_logo:"Logo (PNG)", dl_keyart:"Key art (PNG)", dl_header:"Header image (PNG)",
+  tagline:"A co-op horror spot-the-difference game for 2-4 players. You're in the same room, but you might not see the same thing.",
+  date_line:"October 28, 2026 · Steam",
+  btn_wishlist:"Wishlist on Steam", btn_trailer:"Watch the trailer", btn_zip:"Download all images",
+  h_about:"About the game",
+  about_title:"Same room. But do you see the same thing?",
+  about_p1:"Nothing to Report is an online co-op horror game for 2-4 players. In anomaly games like The Exit 8, you look for the difference alone, from memory. Here, everyone stands in the same room, but each player's map may be different: you see the poster on the wall, the person next to you doesn't. The number you call a 6 is a 9 to them. No looking at each other's screens. You find the difference by talking.",
+  about_p2:"There was a rift in spacetime, and your team has been sent into the changing reflections of our world. The operator on the radio starts out calm. She doesn't stay that way.",
+  diff_1:"<b>One report per level.</b> Get it wrong and you all start over.",
+  diff_2:"<b>Everyone's sanity is their own.</b> Close your eyes to protect your mind, but then you can only listen.",
+  diff_3:"<b>Proximity voice chat.</b> Move apart and your voice goes over the radio, cutting out with distance.",
+  diff_4:"<b>A story and a fully voiced radio operator.</b> English and Turkish voice-over.",
+  h_facts:"Fact sheet",
+  f_dev:"Developer", v_dev:"AderGames (Eskişehir, Türkiye)",
+  f_pub:"Publisher", v_pub:"AderGames (self-published)",
+  f_date:"Release date", v_date:"October 28, 2026",
+  f_platform:"Platform", f_price:"Price",
+  f_players:"Players", v_players:"2-4, online co-op",
+  f_length:"Length", v_length:"15 minutes to 2 hours",
+  f_voice:"Voice-over", v_voice:"English, Turkish",
+  f_langs:"Interface and subtitles", v_langs:"12 languages (incl. Japanese and Turkish)",
+  f_press:"Press contact",
+  h_trailer:"Trailer", tab_en:"English", tab_tr:"Turkish",
+  yt_link:"Watch on YouTube", mp4_link:"Download trailer",
+  h_shots:"Screenshots",
+  shots_note:"Click to enlarge. All available in 4K.",
+  h_downloads:"Downloads",
+  dl_zip:"All images (screenshots, logo, key art, fact sheets)",
+  h_studio:"Studio",
+  studio_p1:"AderGames is an independent game studio founded by two friends in Eskişehir, Türkiye. Nothing to Report is our first game, developed and published by ourselves.",
+  h_contact:"Contact",
+  contact_p:"For news, reviews, interviews and streaming, get in touch.",
+  contact_keys:"Review and streaming key requests can be sent to the same address.",
+  usage:"Images and videos on this page may be used freely for news, reviews and streaming.",
+  lb_full:"Download 4K (JPG)", lb_close:"Close"
+},
+ja:{
+  copy:"コピー", copied:"コピーしました", play:"トレーラーを再生",
+  dl_single:"個別ファイル：", dl_logo:"ロゴ（PNG）", dl_keyart:"キーアート（PNG）", dl_header:"ヘッダー画像（PNG）",
+  tagline:"2～4人で遊ぶ協力型ホラー間違い探しゲーム。同じ部屋にいても、同じものが見えているとは限らない。",
+  date_line:"2026年10月28日 · Steam",
+  btn_wishlist:"Steamでウィッシュリストに追加", btn_trailer:"トレーラーを見る", btn_zip:"画像素材を一括ダウンロード",
+  h_about:"ゲーム概要",
+  about_title:"同じ部屋。でも、同じものが見えている？",
+  about_p1:"『Nothing to Report』は2～4人で遊ぶオンライン協力型ホラーゲームです。『8番出口』のようなアノマリーゲームでは、ひとりで記憶を頼りに異変を探します。本作では全員が同じ部屋に立っていても、プレイヤーごとにマップが違っているかもしれません。壁のポスターがあなたには見えて、隣の仲間には見えない。あなたの「6」が、相手には「9」に見える。互いの画面を見るのは禁止。異変は会話で見つけます。",
+  about_p2:"時空に裂け目が生じ、あなたたちは変わり始めた世界の「写し」の中へ送り込まれます。無線のオペレーターは冷静に始まりますが、冷静なままではいられません。",
+  diff_1:"<b>報告はレベルごとに一度だけ。</b>間違えれば全員やり直しです。",
+  diff_2:"<b>正気度はひとりひとり別。</b>目を閉じれば正気は守れますが、頼れるのは耳だけになります。",
+  diff_3:"<b>距離に応じたボイスチャット。</b>離れると声は無線越しになり、途切れがちになります。",
+  diff_4:"<b>ストーリーとフルボイスの無線オペレーター。</b>英語・トルコ語音声。",
+  h_facts:"ファクトシート",
+  f_dev:"開発", v_dev:"AderGames（トルコ・エスキシェヒル）",
+  f_pub:"パブリッシャー", v_pub:"AderGames（セルフパブリッシング）",
+  f_date:"発売日", v_date:"2026年10月28日",
+  f_platform:"プラットフォーム", f_price:"価格",
+  f_players:"プレイ人数", v_players:"2～4人、オンライン協力プレイ",
+  f_length:"プレイ時間", v_length:"15分～2時間",
+  f_voice:"音声", v_voice:"英語、トルコ語",
+  f_langs:"インターフェース・字幕", v_langs:"12言語（日本語対応）",
+  f_press:"プレス窓口",
+  h_trailer:"トレーラー", tab_en:"英語版", tab_tr:"トルコ語版",
+  yt_link:"YouTubeで見る", mp4_link:"トレーラーをダウンロード",
+  h_shots:"スクリーンショット",
+  shots_note:"クリックで拡大。すべて4Kでダウンロードできます。",
+  h_downloads:"ダウンロード",
+  dl_zip:"画像素材一式（スクリーンショット、ロゴ、キーアート、ファクトシート）",
+  h_studio:"スタジオ",
+  studio_p1:"AderGamesは、トルコ・エスキシェヒルで2人の友人が立ち上げたインディーゲームスタジオです。『Nothing to Report』は私たちの初めてのゲームで、パブリッシャーを介さず自分たちで開発・販売しています。",
+  h_contact:"お問い合わせ",
+  contact_p:"記事掲載、レビュー、インタビュー、配信に関するお問い合わせはこちらへ。",
+  contact_keys:"レビュー用・配信用キーのご相談も同じ窓口で承ります。",
+  usage:"このページの画像と動画は、報道・レビュー・配信の目的で自由にご利用いただけます。",
+  lb_full:"4Kでダウンロード（JPG）", lb_close:"閉じる"
+}};
+
+let lang = "en";
+function setLang(l){
+  lang = T[l] ? l : "en";
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const v = T[lang][el.dataset.i18n];
+    if(v !== undefined) el.innerHTML = v;
+  });
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.lang===lang)));
+  const f = document.querySelector(".yt-facade"); if(f) f.setAttribute("aria-label", T[lang].play);
+  try{ localStorage.setItem("ntr_lang", lang); }catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{
+  setLang(b.dataset.lang);
+  try{ history.replaceState(null, "", "#"+lang); }catch(e){}
+}));
+
+// basın maili
+if(PRESS_EMAIL){
+  document.querySelectorAll(".press-mail").forEach(el=>el.textContent = PRESS_EMAIL);
+  document.querySelectorAll(".press-row").forEach(el=>el.hidden = false);
+}else{
+  document.getElementById("studioRow").classList.add("solo");
+}
+document.getElementById("copyMail").addEventListener("click", e=>{
+  const btn = e.currentTarget;
+  const done = ()=>{ btn.textContent = T[lang].copied; setTimeout(()=>btn.textContent = T[lang].copy, 1600); };
+  try{ navigator.clipboard.writeText(PRESS_EMAIL).then(done).catch(selectMail); }catch(err){ selectMail(); }
+});
+function selectMail(){
+  const el = document.querySelector(".contact-mail"); const r = document.createRange();
+  r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+}
+
+// fragman: tıklayınca YouTube oynatıcısı yüklenir
+const video = document.getElementById("video");
+let curTrailer = "EN";
+function showFacade(code){
+  video.innerHTML = "";
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "yt-facade"; b.setAttribute("aria-label", T[lang].play);
+  const img = document.createElement("img"); img.src = "img/poster_"+code+".jpg"; img.alt = "";
+  const p = document.createElement("span"); p.className = "play"; p.setAttribute("aria-hidden","true");
+  b.append(img, p);
+  b.addEventListener("click", ()=>{
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/"+YOUTUBE[code]+"?autoplay=1&rel=0";
+    f.title = "Nothing to Report trailer";
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    video.innerHTML = ""; video.appendChild(f);
+  });
+  video.appendChild(b);
+}
+function setTrailer(code){
+  curTrailer = code;
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected", String(t.dataset.trailer===code)));
+  showFacade(code);
+  document.getElementById("ytLink").href = "https://youtu.be/"+YOUTUBE[code];
+  document.getElementById("mp4Link").href = "trailer/NothingToReport_Trailer_"+code+"_720p.mp4";
+}
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>setTrailer(t.dataset.trailer)));
+
+// ekran görüntüleri + büyütme
+const grid = document.getElementById("shots");
+SHOTS.forEach((n,i)=>{
+  const b = document.createElement("button");
+  b.className = "shot"; b.type = "button"; b.setAttribute("aria-label","Screenshot "+(i+1));
+  const img = document.createElement("img"); img.loading = "lazy"; img.alt = ""; img.src = "shots/thumb/"+n+".jpg";
+  img.width = 800; img.height = 450;
+  b.appendChild(img); b.addEventListener("click",()=>openLb(i)); grid.appendChild(b);
+});
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbFull = document.getElementById("lbFull");
+let cur = 0, lastFocus = null;
+function showLb(i){ cur = (i+SHOTS.length)%SHOTS.length; const f = "shots/4k/"+SHOTS[cur]+".jpg"; lbImg.src = f; lbFull.href = f; }
+function openLb(i){ lastFocus = document.activeElement; showLb(i); lb.classList.add("open"); document.getElementById("lbClose").focus(); }
+function closeLb(){ lb.classList.remove("open"); lbImg.removeAttribute("src"); if(lastFocus) lastFocus.focus(); }
+document.getElementById("lbClose").onclick = closeLb;
+document.getElementById("lbPrev").onclick = ()=>showLb(cur-1);
+document.getElementById("lbNext").onclick = ()=>showLb(cur+1);
+lb.addEventListener("click",e=>{ if(e.target===lb) closeLb(); });
+document.addEventListener("keydown",e=>{
+  if(!lb.classList.contains("open")) return;
+  if(e.key==="Escape") closeLb(); if(e.key==="ArrowLeft") showLb(cur-1); if(e.key==="ArrowRight") showLb(cur+1);
+});
+
+// ilk dil: #tr / ?lang=tr > kayıtlı seçim > tarayıcı dili > İngilizce
+(function(){
+  const h = (location.hash||"").replace("#","").toLowerCase();
+  const q = (new URLSearchParams(location.search).get("lang")||"").toLowerCase();
+  let saved = null; try{ saved = localStorage.getItem("ntr_lang"); }catch(e){}
+  const nav = (navigator.language||"en").slice(0,2).toLowerCase();
+  setLang(T[h] ? h : T[q] ? q : (saved || (T[nav] ? nav : "en")));
+  setTrailer("EN");
+})();
+</script>
+</body>
+</html>
