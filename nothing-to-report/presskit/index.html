@@ -423,7 +423,6 @@ function setLang(l){
   });
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.lang===lang)));
   const f = document.querySelector(".yt-facade"); if(f) f.setAttribute("aria-label", T[lang].play);
-  try{ localStorage.setItem("ntr_lang", lang); }catch(e){}
 }
 document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{
   setLang(b.dataset.lang);
@@ -499,13 +498,11 @@ document.addEventListener("keydown",e=>{
   if(e.key==="Escape") closeLb(); if(e.key==="ArrowLeft") showLb(cur-1); if(e.key==="ArrowRight") showLb(cur+1);
 });
 
-// ilk dil: #tr / ?lang=tr > kayıtlı seçim > tarayıcı dili > İngilizce
+// ilk dil: varsayılan İngilizce; #tr, #ja ya da ?lang=tr ile başka dil açılır
 (function(){
   const h = (location.hash||"").replace("#","").toLowerCase();
   const q = (new URLSearchParams(location.search).get("lang")||"").toLowerCase();
-  let saved = null; try{ saved = localStorage.getItem("ntr_lang"); }catch(e){}
-  const nav = (navigator.language||"en").slice(0,2).toLowerCase();
-  setLang(T[h] ? h : T[q] ? q : (saved || (T[nav] ? nav : "en")));
+  setLang(T[h] ? h : T[q] ? q : "en");
   setTrailer("EN");
 })();
 </script>
