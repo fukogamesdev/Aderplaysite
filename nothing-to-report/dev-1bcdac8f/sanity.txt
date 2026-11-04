@@ -1,0 +1,202 @@
+NOTHING TO REPORT - SANITY AYAR DEĞİŞİKLİKLERİ
+Sürüm: v2 - 04.11.2026 21:52 (Türkiye saati)
+11 Ekim'deki ayara göre değişenler. Tüm değerler Inspector'dan ayarlanabilir kalsın.
+Güncel sürüm her zaman: https://aderplay.com/nothing-to-report/dev-1bcdac8f/sanity.txt
+
+GÜNCELLEME GÜNLÜĞÜ (en yeni en üstte)
+Nasıl kullanılır: en son işlediğin sürümü not et. Dosya güncellenince buradan o sürümden
+sonraki satırlara bak; her satır değişen bölümün numarasını söyler. Değişen satırların
+sonunda [vX] etiketi olur.
+- v2  04.11.2026 21:52  Romero köşeden bakma ortam efekti kalktı, görselli olay oldu (bölüm 7).
+                        Kısa olaylara ve canavar bölümü havuzuna eklendi (bölüm 1 ve 6).
+- v1  04.11.2026 21:48  İlk sürüm. Bölüm 1-9'un tamamı.
+
+1) AKIL SAĞLIĞI DÜŞÜŞÜNÜ HIZLANDIRANLAR
+- Yürümek: +%1 -> +%3
+- Koşmak: +%5 -> +%6
+- Tek başına kalmak (en yakın oyuncu 10 m'den uzak, yalnızca çok oyunculu): +%15 -> +%75
+  YENİ: tek başınayken sanity göstergesi, olaylar sırasındaki gibi efektlenir.
+- Kısa olaylar (SkullRush, HeadFlash, HeadPeek, HeadLook, PhantomPlayer, CornerPeek), başlarken 1 sn: +%50 -> +%200
+  (CornerPeek'te 1 sn, Romero görüldüğü an başlar.) [v2]
+- Diğer olaylar (diğer görselli olaylar ve ses olayları), olay boyunca: +%25 -> +%100
+- Hayalet Kadın'a bakmak: +%150 -> +%125
+
+2) ÇOK OYUNCULU - GÖRSELLİ OLAY ZARLARI
+  Bantlar:          95-75 / 75-50 / 50-35 / 35-20 / 20-5
+  Easy, Normal:      %10  /  %15  /  %35  /  %45  /  %60   (değişen: 20-5 %55 -> %60)
+  Hard, Extreme:     %25  /  %30  /  %50  /  %60  /  %75   (+15 puan)
+
+3) ÇOK OYUNCULU - SES OLAY ZARI
+- %25 -> %30 (her bantta; görselli zar tutmazsa atılır)
+
+4) TEK OYUNCULU (YENİ, ayrı değerler)
+- Görselli olay zarları (zorluk eklemesi: Easy yok, Normal +10, Hard +15, Extreme +20;
+  çok oyunculudaki Hard ve Extreme +15'in yerine geçer):
+  Bantlar:     95-75 / 75-50 / 50-35 / 35-20 / 20-5
+  Easy:         %10  /  %15  /  %35  /  %45  /  %60
+  Normal:       %20  /  %25  /  %45  /  %55  /  %70
+  Hard:         %25  /  %30  /  %50  /  %60  /  %75
+  Extreme:      %30  /  %35  /  %55  /  %65  /  %80
+- Ses olay zarı: her zorlukta %40.
+
+5) GARANTİ OLAYI (YENİ, tek ve çok oyunculu)
+- Puan: hiçbir oyuncunun görselli olay yaşamadan bitirdiği her bölüm ekibe +1 puan (ses olayları
+  sayılmaz). Herhangi bir oyuncu görselli olay yaşayınca puan 0.
+- Puan ve canavar sayacı oynanan her bölümü sayar: doğru rapor, yanlış rapor ya da elenmeyle
+  biten bölüm fark etmez. Elenip Bölüm 1'e dönmek puanı ve sayacı sıfırlamaz.
+- Puan 2 veya üzerindeyken girilen her bölümde çalışır. O bölüm de görselsiz biterse puan artar,
+  garanti açık kalır.
+- Zarlar bölüm başında atılır, kontrol ondan sonra yapılır: 95-50 arasında (ilk iki bant) hiçbir
+  oyuncuya görselli olay çıkmayacaksa garanti devreye girer. 50-35'te çıkacak bir olay bunu
+  engellemez.
+- Garanti: rastgele bir oyuncuya, 75-50 arasında rastgele bir noktada, 75-50 bandının havuzundan
+  bir görselli olay eklenir (HandsDrag ve Choke gelmez). 75-50'de çıkan normal bir olay gibi
+  davranır: öteleme, göz kapatma ve sıra kuralları aynı.
+- Canavar çıkacak bölümde garanti çalışmaz (canavar görselli olay sayılır).
+- Zarları host atar ve her oyuncuya kendi olay listesini gönderir; olaylar oyuncunun
+  bilgisayarında oynar. (Kural tüm oyuncuların sonuçlarını birlikte görmeyi gerektiriyor.)
+
+6) CANAVARLAR (YENİ)
+- Her bölümün başında ilk olarak canavar zarı atılır: Easy %0, Normal %10, Hard %20, Extreme %30.
+  Canavar çıkacaksa gelme değeri belirlenir, sanity zarları ondan sonra atılır.
+- Canavarın geleceği değer hangi bantta ise (95-75 ya da 75-50) o bandın görsel ve ses zarı hiç
+  atılmaz. Diğer bantların zarları normal atılır.
+- Canavar garantisi: oyunun başında üst üste 5 bölüm canavarsız geçerse 6. bölümde canavar
+  kesin çıkar. İlk canavar çıktıktan sonra (zarla ya da garantiyle) eşik 8 olur: üst üste
+  7 bölüm canavarsız geçerse 8. bölümde kesin çıkar. Eşik oturum boyunca 8 kalır.
+- Canavar çıkınca sayaç sıfırlanır. Oynanan her bölüm sayılır (doğru rapor, yanlış rapor ya da
+  elenme); Bölüm 1'e dönmek sayacı sıfırlamaz.
+- Garanti Easy dahil her zorlukta çalışır (Easy'de canavar zarı %0 olsa da garanti canavarı
+  çıkarabilir).
+- Tutarsa o haritada kilidi olmayan canavarlardan biri ağırlığına göre seçilir.
+  Canavarlar: Kafatasları, Hayalet Kadın, Kız Çocuğu, Susturan Kız, Gelin ve Baltalı Adam, eşit ağırlık.
+  Tek oyunculuda Baltalı Adam havuzda yok.
+- Bütün canavarlar 95-50 arası rastgele bir akıl sağlığı değerinde gelir; o değere ilk inen
+  oyuncu tetikler.
+- Bir canavar aktifken başka canavar aktif olamaz.
+- Canavarlara harita kilidi konabilir. Kafatasları mumlu haritalarda gelmez.
+- Kafatasları ve Hayalet Kadın ortaktır, herkes görür. Kız Çocuğu sadece takıldığı oyuncuya görünür.
+  Susturan Kız, Gelin ve Baltalı Adam ortaktır.
+- Canavar gelen bölüm görselli olay sayılır, garanti puanını sıfırlar.
+- Canavarın aktif olduğu bantlar o bölüm için tamamen iptal olur. Bir oyuncu bir bantta
+  bulunurken canavar o an aktifse, o oyuncunun o banttaki görsel ve ses olayları iptal edilir;
+  canavar bant bitmeden gitse bile o bant iptal kalır.
+  Örnek: canavar 80'de geldi, oyuncu 74'e indiğinde hâlâ vardı ve 72'de yok edildi. O oyuncunun
+  75-50'deki 70'e düşen olayı da iptal olur.
+  Canavar bittikten sonra oyuncunun girdiği bantların zarları normal işler.
+- İstisna: rapora kadar kalabilen canavarlar (Kız Çocuğu, Kafatasları, Gelin) aktifken bantlar
+  iptal olmaz; olaylar canavar bölümü havuzundan normal ihtimallerle gelmeye devam eder.
+  Canavarın geldiği bandın zarı bunlarda da atılmaz.
+- Canavar çıkacak bölümde sanity zarları ayrı bir havuzdan seçilir (bölümün tamamında, canavarın
+  öncesinde ve sonrasında). Bant ihtimalleri ve ses zarı normal değerlerle aynıdır.
+  Canavar bölümü havuzu, görselli: RedLight, Blur, Drunk, HeadFlash, OtherRoomLaugh, CornerPeek
+  (ağırlık ve kilitler aynı). Ses olaylarının 10'u da havuzda. [v2: CornerPeek eklendi]
+  Havuzda olmayanlar: HeadLook, PhantomPlayer, HandsDrag, Choke, EyeStare, SkullRush, CoveringHands,
+  InvertedControls, HeadPeek.
+
+  KAFATASLARI
+  - Sayı: çok oyunculuda rastgele 6-15, tek oyunculuda 4-8.
+  - Etrafta yavaş ve rastgele uçuşurlar; odaklanmış ışığa girince hafifçe kaçmaya çalışırlar.
+  - Fenerle sağ tıklayıp ışık odaklanınca bir süre sonra beyazlaşarak yanar ve yok olur
+    (1.5 sn; iki fener aynı kafatasına tutulursa süre yarıya iner).
+  - Görüş alanında en az bir kafatası varken akıl sağlığı düşüşü +%100. Kafatası sayısıyla artmaz.
+  - Hepsi yakılınca canavar biter; yakılmazlarsa rapora kadar kalırlar. Oy kilidi yok.
+  - Ses: gelişlerini haber veren takırtı / diş sesi (ses listesine eklenecek).
+
+  HAYALET KADIN (artık canavar)
+  - Kendi %10 zarı kalktı; canavar zarından çıkar. Normal ve sonrası bölümlerde açık.
+  - 10. bölümde kesin çıkma kuralı kalktı.
+  - Diğer canavarlar gibi 95-50 arasında gelir (önceden 50-20).
+  - Aktifken zar olayları oynamaz (diğer canavarlarla aynı kural).
+  - Diğer davranışı aynı.
+
+  KIZ ÇOCUĞU (musallat olan tür)
+  - Tetiklendiği an o bölümde en çok yürümüş oyuncuya (yürüme + koşma mesafesi) takılır. Tek
+    oyunculuda oyuncunun kendisine.
+  - Sadece takıldığı oyuncu görür.
+  - Oyuncu onu görmeden yürüdükçe arkasından takip eder: yürüme hızında, 3-6 m geride.
+    Oyuncunun görüş alanında asla hareket etmez ya da belirmez.
+  - O oyuncu ona baktığı sürece tamamen sabit durur.
+  - Oyuncu ona baktıkça akıl sağlığı düşüşü +%200.
+  - Çok uzun süre bakılırsa suratına atlar ve o oyuncunun akıl sağlığını sıfırlar: kesintisiz 10 sn
+    bakılınca.
+  - Rapora kadar kalır. Oy kilidi yok.
+
+  SUSTURAN KIZ (Kız Çocuğu v2)
+  - Sinsi bir yürüyüş animasyonuyla yürür. Herkes görür.
+  - Geldiği bölümde 3-4 kez belirir: ilki canavar tetiklendiğinde, sonrakiler 25-40 sn arayla.
+  - Her belirişte, o bölümde o ana kadar en çok konuşmuş oyuncuyu seçer ve ona doğru yürür.
+    Yoldayken hedef değiştirmez.
+  - Hedefin görüş alanına girince eliyle "şşşh" yapar ve o oyuncunun sesini 15 sn kapatır.
+    Bu sırada ekranda "Konuşman engellendi" yazar.
+  - Şşh'tan sonra hedefin gözü kapanıp açılır; göz açıldığında kız yok olmuştur.
+  - Onu gören herkeste görüldüğü sürece akıl sağlığı düşüşü +%100. Susturulan oyuncuda konuşamadığı
+    15 sn boyunca ayrıca +%50.
+  - Hedef ona hiç bakmazsa yürümeye devam eder ve 2 m'ye girince hedefin önüne geçip şşh yapar.
+  - Hedeften 15-25 m uzakta, hedefin görüş alanı dışında belirir.
+  - Tek oyunculuda da gelir: sadece şşh yapar; ses kapatma, "Konuşman engellendi" yazısı ve +%50
+    yok. Hedef her zaman oyuncunun kendisi.
+  - 3-4 belirişi tamamlayınca ya da rapor verilince biter. Oy kilidi yok.
+
+  GELİN
+  - Belirir ve yavaş yavaş gezer. Herkes görür.
+  - Onu gören her oyuncuda görüldüğü sürece akıl sağlığı düşüşü +%100.
+  - Yok edilmediği sürece bir süre gezdikten sonra ellerini öne açarak bir oyuncuya koşar ve
+    görüşünü kapatır: ekran direkt siyah olur, 5 sn kapalı kalır. Bu süre boyunca o oyuncuda
+    akıl sağlığı düşüşü +%50. Saldırılar arası 15-25 sn gezinir; hedef rastgele bir oyuncudur;
+    koşmaya başlayınca kaçılamaz.
+  - Yok etme: tüm oyuncular aynı anda sağ tıkla fenerlerini ona tutarsa yanarak yok olur, ya da
+    herkes aynı anda gözünü kapatırsa yok olur. Sağ tıkla odaklanmış ışık 4 sn tutulunca,
+    gözler 3 sn kapalı kalınca yok olur.
+  - Tek oyunculuda da gelir; "tüm oyuncular" oyuncunun kendisidir.
+  - Yok edilmezse rapor verilene kadar etrafta dolaşır ve saldırmaya devam eder. Oy kilidi yok.
+
+  BALTALI ADAM (yalnızca çok oyunculu)
+  - Elindeki baltayı yerde sürüyerek gezer.
+  - Onu gören her oyuncuda görüldüğü sürece akıl sağlığı düşüşü +%50.
+  - Oyunculardan 20-30 m uzakta, görüş dışında belirir. İlk geldiğinde "şşş" diye bir ses çıkarır.
+  - Sadece biri oyun içi sesli sohbette konuşurken, konuşan oyuncuya doğru yavaş yürür. Konuşma
+    kesilince olduğu yerde durur (idle). Oyun içi sesli sohbetteki her konuşma sayılır (yakından
+    doğrudan da, uzaktan telsizden de). Aynı anda birden fazla kişi konuşuyorsa en yakınına yürür.
+    Baltanın yerde sürtünme sesi yerini belli eder.
+  - Biri konuşmaya başlayınca (durduğu yerden harekete geçerken) "hı?" diye kısa bir ses çıkarır.
+  - Oyuncunun dibine girince baltasını savurur; oyuncunun görüşü kapanırken akıl sağlığı 0'a düşer
+    ve elenme gerçekleşir. Yakalama mesafesi 1.5 m.
+  - Kimse 20 sn ses çıkarmazsa gider. Rapor verilirse de biter.
+    Oy kilidi yok.
+
+7) ROMERO KÖŞEDEN BAKIYOR (CornerPeek) - YENİ GÖRSELLİ OLAY [v2: ortam efektiydi, olay oldu]
+- Artık ayrı çalışan bir ortam efekti değil. Görselli olay havuzunda hafif bir olay: zar tutunca
+  diğer olaylar gibi ağırlığına göre seçilir. Ağırlık 2, sanity 75'in altında açılır, kapanmaz.
+- Görselli olay sayılır: garanti puanını sıfırlar. Garantinin 75-50 havuzunda da var.
+  Canavar bölümü havuzunda da var.
+- Oyuncu başına (diğer oyuncular görmez). Oy kilidi yok. Göz kapatma serbest; göz kapalıyken de
+  çıkabilir.
+- Haritada elle işaretlenmiş köşe noktaları (kapı kenarları, koridor dönüşleri); her noktada
+  bakış ve çekilme yönü tanımlı.
+- Olay sırası gelince uygun nokta aranır: oyuncudan 8-20 m uzakta, oyuncu o yöne bakmıyor (en az
+  100° dönük), oyuncu dönünce görebileceği konumda (arada duvar yok). Uygun nokta yoksa her 1 sn
+  tekrar bakılır; 15 sn içinde bulunamazsa olay iptal olur ve o bantta açık başka bir görselli
+  olay seçilip oynar.
+- Romero yarım yüzle köşeden sessizce bakar. Oyuncunun bakışı ona yaklaşık 15° yaklaşınca ve en az
+  0.15 sn ekranda kaldıktan sonra 0.3-0.5 sn'de içeri çekilir. 6-8 sn içinde görülmezse (göz
+  kapalıyken de) kendiliğinden çekilir. Çekilirken çok hafif bir ses olabilir.
+- Görüldüğü an 1 sn boyunca akıl sağlığı düşüşü +%200 (kısa olay).
+- Kalkan eski kurallar: saniyelik %1/%2/%3 ihtimal, bölümde en fazla 1-2 kez sınırı, 20 sn ara,
+  tutorial ve ilk 15 sn kapalılığı. Bunları artık olay zarları ve sıra kuralları belirliyor.
+
+8) BÖLÜM SAYISI
+- Oyun 12 bölüme çıkıyor.
+
+9) CANAVAR BAŞARIMLARI (YENİ)
+- Her canavar için bir Steam başarımı var. Canavarın çıktığı bölümü geçince (doğru rapor verip
+  sonraki bölüme geçince) açılır. Elenince ya da yanlış raporda açılmaz.
+- Canavar o bölümde ortaya çıkmış olmalı. Zar tutup gelme değerine hiç inilmediyse açılmaz.
+  Canavar rapordan önce gittiyse ya da yok edildiyse açılır.
+- NEW_ACHIEVEMENT_1_10  Kafatasları    Kelle Avcısı
+- NEW_ACHIEVEMENT_1_11  Hayalet Kadın  Bakma Ona
+- NEW_ACHIEVEMENT_1_12  Kız Çocuğu     Çocuk Bakıcısı
+- NEW_ACHIEVEMENT_1_13  Susturan Kız   Sessizlik!
+- NEW_ACHIEVEMENT_1_14  Gelin          Kaçak Gelin
+- NEW_ACHIEVEMENT_1_15  Baltalı Adam   Dilini Tut (yalnızca çok oyunculu)
+- Başarım metinleri 12 dilde ayrıca gönderilecek.
